@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e48d166edc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style2.css">
+    <title>Login Form for Car Parking Reservation</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="img">
+            <img src="https://imgd-ct.aeplcdn.com/1056x660/n/d4uf84a_1522137.jpg?q=75" alt="BG">
+        </div>
+
+        <div class="login-content">
+
+            <form action="#">
+
+                <div class="title-container">
+                    <h1>LOGIN</h1>
+                    <h3><i>CAR PARKING RESERVATION</i> </h3>
+                    <p>Hello Friends!</p>
+                </div>
+
+
+                <div class="login-inner-content">
+
+
+                    <div class="input-div one">
+                        <div class="i">
+                            <i class="far fa-user-circle"></i>
+                        </div>
+                        <div class="div">
+                            <h5>USER ID</h5>
+                            <input id="Username" type="text" class="input">
+                        </div>
+                    </div>
+
+                    <div class="input-div pass">
+                        <div class="i">
+                            <i  onclick="show()"></i>
+                        </div>
+                        <div class="div">
+                            <h5>PASSWORD</h5>
+                            <input id="pswrd" type="password" class="input">
+                        </div>
+                    </div>
+
+                </div>
+                     
+                       <button><a href="index.html" input type="submit" class="btn" onclick="login()"><b>LOGIN</b></a></button>
+
+                <div>       
+                <h6>Not a member ? <a href="#">Create Account</a></h6>
+            </div>
+            </form>
+        </div>
+    </div>
+    
+     <script>
+        function login() {
+    let email= document.getElementById("Username").value;
+    let password=  document.getElementById("pswrd").value;
+
+    if(email=='safalyatripathy@gmail.com' && password=='123456789') {
+        alert("successfully LoggedIn")
+        window.location.assign("index.html")
+        
+
+    }
+    else{
+        console.log("Wrong Username/Password")
+        window.location.assign("index2.html")
+
+    }
+ 
+
+}
+     </script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
